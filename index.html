@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
 <link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+<link rel="stylesheet" href="css/theme/gregarized.css" id="theme">
 <!-- Theme used for syntax highlighting of code -->
 <link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -98,6 +98,9 @@
 			</ul>
 		</section>
 	</section>
+
+<!-- **************** -->
+
 	<section id="tools" data-background="img/bg.png">
 		<section id="recap-challenges" data-background="img/bg.png">
 			<h2>major challenges</h2>
@@ -108,50 +111,75 @@
 			</ol>
 		</section>
 		<section id="process" data-background="img/bg.png">
-			<p>Slides can be nested inside of each other.</p>
-			<p>Use the <em>Space</em> key to navigate through all slides.</p>
-			<br>
-			<a href="#" class="navigate-down">
-				<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-			</a>
+			<h2>approach</h2>
+				<pre><code class="hljs">1. FOR (each_challenge):
+2.  discuss_problem;
+3.  describe_solution;
+4.  learn_about_tools;
+5.  practice;
+6. ENDFOR</code></pre>
 		</section>
-			<section data-background="img/bg.png">
-				<h2>Basement Level 1</h2>
-				<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-			</section>
-			<section data-background="img/bg.png">
-				<h2>Basement Level 2</h2>
-				<p>That's it, time to go back up.</p>
-				<br>
-				<a href="#/2">
-					<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-				</a>
-			</section>
+	</section>
+	<section id="challenge1" data-background="img/bg.png">
+		<section data-background="img/bg.png">
+			<h2>code sharing</h2>
+				<ul>
+					<li>how do you share it?</li>
+					<li>what happens when you make changes?</li>
+					<li>what if there are bugs?</li>
+					<li>how do you get credit?</li>
+				</ul>
 		</section>
+		<section data-background="img/bg.png">
+			<h2>features we want</h2>
+				<ul>
+					<li>code hosted in the cloud</li>
+					<li>version control and change tracking</li>
+					<li>mechanism for receiving feedback</li>
+					<li>possibility of attaching a DOI</li>
+				</ul>
+		</section>
+		<section data-background="img/bg.png">
+			<h2>tools to help</h2>
+				<ul>
+					<li>Github</li>
+					<li>Zenodo</li>
+				</ul>
+		</section>
+	</section>
+	<section id="github" data-background="img/bg.png">
+		<section id="" data-background="img/bg.png">
+			<h2>Github</h2>
+				<ul>
+					<li>Github</li>
+					<li>Zenodo</li>
+				</ul>
+		</section>
+	</section>
+	<section id="challenge1" data-background="img/bg.png">
+			<section data-background="img/bg.png">
+				<h2>Slides</h2>
+				<p>
+					Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+				</p>
+			</section>
 
-				<section data-background="img/bg.png">
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+			<section data-background="img/bg.png">
+				<h2>Point of View</h2>
+				<p>
+					Press <strong>ESC</strong> to enter the slide overview.
+				</p>
+				<p>
+					Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+				</p>
+			</section>
 
-				<section data-background="img/bg.png">
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section data-background="img/bg.png">
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+			<section data-background="img/bg.png">
+				<h2>Touch Optimized</h2>
+				<p>
+					Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+				</p>
+			</section>
 
 				<section data-markdown data-background="img/bg.png">
 					<script type="text/template">
@@ -170,7 +198,7 @@
 						```
 					</script>
 				</section>
-
+			</section>
 				<section data-background="img/bg.png">
 					<section id="fragments" data-background="img/bg.png">
 						<h2>Fragments</h2>
@@ -204,25 +232,6 @@
 						<a href="?transition=convex#/transitions">Convex</a> -
 						<a href="?transition=concave#/transitions">Concave</a> -
 						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes" data-background="img/bg.png">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
 					</p>
 				</section>
 
@@ -396,7 +405,7 @@ Reveal.addEventListener( 'customevent', function() {
 					</p>
 				</section>
 
-				<section>
+				<section data-background="img/bg.png">
 					<h2>Much more</h2>
 					<ul>
 						<li>Right-to-left support</li>
@@ -407,7 +416,7 @@ Reveal.addEventListener( 'customevent', function() {
 					</ul>
 				</section>
 
-				<section style="text-align: left;">
+				<section style="text-align: left;" data-background="img/bg.png">
 					<h1>THE END</h1>
 					<p>
 						- <a href="http://slides.com">Try the online editor</a> <br>
