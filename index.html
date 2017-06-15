@@ -39,7 +39,9 @@
 
 	<section id="front-matter" data-background="img/bg.png">
 		<section id="title" data-background="img/bg.png">
-			<h1>BrainHack 101:</h1>
+			<h1 style="display:inline">BrainHack </h1>
+			<img style="border:0px; margin:-60px 0px" height="170px" data-src="./img/101.svg" alt="101">
+			<h1 style="display:inline"> :</h1>
 			<h3>A Beginners Guide to Computational Neuroscience</h3>
 			<p>
 				<small><a href="https://gkiar.github.io">Greg Kiar</a> &amp; the <a href="https://ohbm.github.io/hackathon2017/">BrainHack Team</a></small>
@@ -282,6 +284,7 @@
 					<li>create simple Dockerfile</li>
 					<li>build your image</li>
 					<li>push image to Dockerhub</li>
+					<li>push Dockerfile to GitHub</li>
 					<li>(bonus) link with CI</li>
 				</ol>
 		</section>
@@ -324,7 +327,8 @@
 	<section data-background="img/bg.png">
 		<section id="jupyter" data-background="img/bg.png">
 			<h2>jupyter</h2>
-			<p>... has several resources to help you <a href="http://jupyter.org/documentation.html">get started</a></p>
+			<p>... has several resources to help you <a href="http://jupyter.org/documentation.html">get started</a>
+			with Jupyter and <a href="https://ipywidgets.readthedocs.io/en/latest/">widgets</a>.</p>
 			<p>We are going to demonstrate using Jupyter with Python, but it works with other languages as well</p>
 		</section>
 
@@ -334,28 +338,26 @@
 		</section>
 
 		<section data-background="img/bg.png">
-		<!--
 			<h2>text annotations</h2>
-			<img style="border:2px solid #666; margin:-8px 0px" width="98%" data-src="img/issue.png" alt="history">
+			<img style="border:2px solid #666; margin:-8px 0px" width="90%" data-src="img/jupyter2.png" alt="history">
 		</section>
 
 		<section data-background="img/bg.png">
 			<h2>interactive widgets</h2>
-			<img style="border:2px solid #666; margin:-8px 0px" width="98%" data-src="img/issue.png" alt="history">
+			<img style="border:2px solid #666; margin:-8px 0px" width="80%" data-src="img/jupyter3.png" alt="history">
 		</section>
 
 		<section data-background="img/bg.png">
 			<h2>trying it out</h2>
-				<p>head back up, click on the <a href="#/docker">guide</a>, and give it a shot</p>
+				<p>Go back to the documentation, click on the <a href="#/jupyter">guide</a>, and play!</p>
 				<p>your task is to:</p>
 				<ol>
-					<li>install Docker</li>
-					<li>launch + run "hello, world!"</li>
-					<li>create Dockerhub account</li>
-					<li>create simple Dockerfile</li>
-					<li>build your image</li>
-					<li>push image to Dockerhub</li>
-				</ol> -->
+					<li>install Jupyter and Jupyter Widgets</li>
+					<li>launch a Jupyter server</li>
+					<li>create a Jupyter notebook</li>
+					<li>use a Jupyter widget in your notebook</li>
+					<li>push your notebook to GitHub</li>
+				</ol>
 		</section>
 	</section>
 
@@ -363,31 +365,25 @@
 
 	<section data-background="img/bg.png">
 		<section id="tying" data-background="img/bg.png">
-			<h2>todo: tying it together</h2> <!--
+			<h2>tying it together</h2>
+			<p>Now that you have learned all of these tools, your challenge is to create and share a
+			reproducible and open analysis including the following:</p>
 				<ul>
-					<li>how can you make it work acoss OS?</li>
-					<li>how can you make install easy?</li>
-					<li>how can you make it clear what version you're using?</li>
+					<li>code on Github</li>
+					<li>data somewhere public*</li>
+					<li>environment in a Dockerfile</li>
+					<li>interactive plot/analysis in Jupyter</li>
 				</ul>
+			<p>*where depends on the data; consult me first <img style="border:0px; margin:-8px 0px" width="50" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" alt=":smile:"></p>
 		</section>
 
 		<section data-background="img/bg.png">
-			<h2>features we want</h2>
-				<ul>
-					<li>agnostic to OS</li>
-					<li>one-click installation</li>
-					<li>version control</li>
-				</ul>
-		</section>
+			<h2>there are resources</h2>
+			<p>For each of these steps, there is an example in the <a href="https://github.com/brainhack101/scratch-the-dura/">scratch the dura</a> repository which
+			can help, as well as everything you've done so far.</p>
 
-		<section data-background="img/bg.png">
-			<h2>tools to help</h2>
-				<ul>
-					<li>Docker</li>
-					<li>CircleCI/TravisCI*</li>
-				</ul>
-				<br/> <br/>
-				<p>*we mention <em>continuous integration</em> (CI) here and provide resources, but it is beyond the scope of what we cover in class.</p> -->
+			<p>There is also suggested data that can serve as a nice starting place for some cool graph analyses in
+			this repo</p>
 		</section>
 	</section>
 
